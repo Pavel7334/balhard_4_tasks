@@ -28,8 +28,12 @@ users = {
 
 
 def del_user(users_dict: dict, login: Any) -> dict:
-    # TODO вставить код сюда
-    return login
+
+    if login in users_dict:
+        del users_dict[login]
+    else:
+        print(f"Пользователя с логином {login} нет в системе!")
+    return users_dict
 
 
 if __name__ == '__main__':
