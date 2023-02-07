@@ -23,8 +23,8 @@ PRODUCTS = {
 
 def products_num(database: dict) -> int:
     # TODO написать код ниже
-    result = None
-    return result
+
+    return len(database)
 
 
 if __name__ == '__main__':
