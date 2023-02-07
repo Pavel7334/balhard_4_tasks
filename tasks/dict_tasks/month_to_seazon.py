@@ -23,9 +23,15 @@ def month_to_season(month: int) -> str:
     :return: название сезона, например "зима"
     :rtype: str
     """
-    season = None
-    return season
 
+    months = {
+        12: 'Зима',
+        4: 'Весна',
+        7: 'Лето',
+        9: 'Осень'
+    }
+
+    return months.get(month)
 
 if __name__ == '__main__':
     month_number = int(input('Введите номер месяца: '))
