@@ -6,9 +6,10 @@
 
 
 def unite_dict(dict_1: dict, dict_2: dict) -> dict:
-    # TODO dict_1 обновить элементами dict_2
-    return dict_1
 
+    dict_1.update(dict_2)
+
+    return dict_1
 
 if __name__ == '__main__':
     assert {1: 100, 2: 200} == unite_dict({1: 100}, {2: 200})
