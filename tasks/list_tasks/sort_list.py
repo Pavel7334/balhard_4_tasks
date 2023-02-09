@@ -10,6 +10,8 @@ from copy import deepcopy
 def sort_list(collection: list) -> tuple:
     asc_sort = deepcopy(collection)
     desc_sort = deepcopy(collection)
+    asc_sort = sorted(asc_sort)
+    desc_sort = sorted(desc_sort, reverse=True)
     # TODO вставить код сюда
     return asc_sort, desc_sort
 
