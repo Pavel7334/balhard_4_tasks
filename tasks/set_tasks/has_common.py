@@ -7,11 +7,8 @@
 
 
 def has_common(set_1: set, set_2: set) -> bool:
-    for i in set_1:
-        if i in set_2:
-            return True
-    return False
 
+    return set_1 & set_2
 
 if __name__ == '__main__':
     assert has_common({1, 2, 3, 4}, {3, 4, 5})
