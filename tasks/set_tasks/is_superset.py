@@ -9,9 +9,8 @@
 
 
 def is_superset(set_1: set, set_2: set) -> bool:
-    # TODO вставить код сюда
-    result = None
-    return result
+
+    return set_2.issubset(set_1)
 
 
 if __name__ == '__main__':
