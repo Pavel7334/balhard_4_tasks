@@ -6,9 +6,8 @@
 
 
 def set_length(collection: set) -> int:
-    # TODO написать код ниже
-    result = None
-    return result
+
+    return len(collection)
 
 
 if __name__ == '__main__':
