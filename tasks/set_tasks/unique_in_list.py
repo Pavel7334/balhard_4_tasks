@@ -6,9 +6,8 @@
 
 
 def get_unique_in_list(some_list: list) -> set:
-    # TODO вставить код сюда
-    result = None
-    return result
+
+    return set(some_list)
 
 
 if __name__ == '__main__':
